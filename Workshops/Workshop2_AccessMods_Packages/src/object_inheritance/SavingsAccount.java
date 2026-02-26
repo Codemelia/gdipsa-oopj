@@ -7,7 +7,6 @@ public class SavingsAccount extends Account {
 	}
 
 	// override calc interest method
-	// Math.abs(balance) to ensure pos/neg doesn't affect calc
 	@Override
 	public double calculateInterest() {
 		if (getBalance() < 0) return 0; // handles case of neg balance
