@@ -1,6 +1,6 @@
 package access_modifiers;
 
-import access_modifiers.child.MyChild;
+import inheritance.MyChild;
 
 public class Main {
 

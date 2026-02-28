@@ -1,6 +1,4 @@
-package access_modifiers.child;
-
-import access_modifiers.parent.MyParent;
+package inheritance;
 
 public class MyChild extends MyParent {
 	
@@ -11,7 +9,7 @@ public class MyChild extends MyParent {
 	
 	public int getXPlusY() {
 		// accessing protected methods of parent
-		return getX() + getY();
+		return x + y;
 	}
 	
 }

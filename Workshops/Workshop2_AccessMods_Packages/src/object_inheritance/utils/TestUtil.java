@@ -1,4 +1,6 @@
-package object_inheritance;
+package object_inheritance.utils;
+
+import object_inheritance.models.Account;
 
 public class TestUtil {
 
@@ -6,7 +8,7 @@ public class TestUtil {
 	public static void print(Account acc) {
 		System.out.println("\n\t\tAccount Information");
 		System.out.println("---------------------------------------------------");
-		System.out.println(acc);
+		acc.display();
 	}
 	
 	// verify success of withdraw/deposit

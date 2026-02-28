@@ -1,6 +1,11 @@
 package object_inheritance;
 
-import static object_inheritance.TestUtil.*;
+import static object_inheritance.utils.TestUtil.*;
+
+import object_inheritance.models.Account;
+import object_inheritance.models.CurrentAccount;
+import object_inheritance.models.OverdraftAccount;
+import object_inheritance.models.SavingsAccount;
 
 public class Test {
 	public static void main(String[] args) {
@@ -14,7 +19,7 @@ public class Test {
 		testOverdraftAccount();
 		
 	}
-	
+	// helper methods
 	public static void testAccount() {
 		// Test class Account by creating an Account object
 		// and call methods to make sure your code at
@@ -27,6 +32,7 @@ public class Test {
 		// - holderId: S1111111A
 		// - balance: 2000
 		Account myAccount = new Account("S0000111", "S1111111A", 2000);
+		System.out.printf("Account %s has been created.%n", myAccount.getNumber());
 		
 		// 2. Call System.out.println(myAccount)
 		// Make sure that the account information
@@ -65,8 +71,11 @@ public class Test {
 	}
 	
 	public static void testSavingsAccount() {
+		System.out.println("\n===== Testing Savings Account =====\n");
+		
 		// new savings acc obj
 		SavingsAccount savAccount = new SavingsAccount("S0000222", "S1111111B", 1500);
+		System.out.printf("Account %s has been created.%n", savAccount.getNumber());
 		print(savAccount);
 		
 		// savings account interest credit
@@ -81,8 +90,12 @@ public class Test {
 	}
 	
 	public static void testCurrentAccount() {
+		System.out.println("\n===== Testing Current Account =====\n");
+		
 		// new current acc obj
 		CurrentAccount currAccount = new CurrentAccount("C0000111", "C1111111A", 3000);
+		System.out.printf("Account %s has been created.%n", currAccount.getNumber());
+
 		print(currAccount);
 		
 		// current account interest credit
@@ -98,8 +111,12 @@ public class Test {
 	}
 	
 	public static void testOverdraftAccount() {
+		System.out.println("\n===== Testing Overdraft Account =====\n");
+		
 		// new overdraft acc obj
 		OverdraftAccount overAccount = new OverdraftAccount("O0000111", "O1111111A", -400);
+		System.out.printf("Account %s has been created.%n", overAccount.getNumber());
+
 		print(overAccount);
 		
 		// overdraft account interest credit

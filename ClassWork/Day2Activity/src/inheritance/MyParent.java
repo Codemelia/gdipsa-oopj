@@ -1,4 +1,4 @@
-package access_modifiers.parent;
+package inheritance;
 
 public class MyParent {
 

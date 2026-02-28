@@ -1,4 +1,4 @@
-package object_inheritance;
+package object_inheritance.models;
 
 public class OverdraftAccount extends Account {
 	

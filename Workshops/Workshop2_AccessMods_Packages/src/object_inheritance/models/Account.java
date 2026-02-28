@@ -1,4 +1,4 @@
-package object_inheritance;
+package object_inheritance.models;
 
 public class Account {
 	/**
@@ -47,10 +47,7 @@ public class Account {
 	* This method prints out the number, holder id and balance
 	* of the account.
 	*/
-	public void display() {
-		System.out.printf("Number: %s%nHolderID: %s%nBalance: %,.2f%n", 
-			number, holderId, balance);
-	}
+	public void display() { System.out.printf(toString()); }
 	
 	/**
 	* TODO: implement method deposit().
